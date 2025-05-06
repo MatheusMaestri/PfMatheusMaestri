@@ -476,5 +476,47 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
     <script src="script.js"></script>
+    <script>
+        emailjs.init("EBdHJJ-N77BDyWP3e");
+        contactForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+            
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const message = document.getElementById('message').value;
+            if (!name || !email || !message) {
+                alert('Por favor, preencha todos os campos.');
+                return;
+            }
+            
+            const submitButton = contactForm.querySelector('button[type="submit"]');
+            const originalButtonText = submitButton.textContent;
+            submitButton.textContent = 'Enviando...';
+            submitButton.disabled = true;
+            
+            const templateParams = {
+                to_email: 'matheusmaestri28@gmail.com',
+                from_name: name,
+                from_email: email,
+                message: message
+            };
+            
+            emailjs.send('service_53haut9', 'template_4gntoop', templateParams)
+                .then(function(response) {
+                    console.log('Email enviado!', response.status, response.text);
+                    showNotification(name, email, message);
+                    contactForm.reset();
+                })
+                .catch(function(error) {
+                    console.error('Erro ao enviar email:', error);
+                    alert('Ocorreu um erro ao enviar sua mensagem. Por favor, tente novamente mais tarde.');
+                })
+                .finally(function() {
+                    // Restaurar o botão
+                    submitButton.textContent = originalButtonText;
+                    submitButton.disabled = false;
+                });
+        });
+    </script>
 </body>
 </html>
