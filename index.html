@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matheus Maestri | Desenvolvedor WEB</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Preloader -->
+    <div class="preloader">
+        <div class="loader"></div>
+    </div>
+
+    <!-- Header -->
+    <header class="header" id="header">
+        <div class="container header-inner">
+            <a href="#home" class="logo">
+                <span class="logo-bracket">&lt;</span>MM<span class="logo-bracket">/&gt;</span>
+            </a>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="#home" class="active">Home</a></li>
+                    <li><a href="#about">Sobre</a></li>
+                    <li><a href="#experience">Experiência</a></li>
+                    <li><a href="#projects">Projetos</a></li>
+                    <li><a href="#skills">Tecnologias</a></li>
+                    <li><a href="#contact">Contato</a></li>
+                </ul>
+            </nav>
+            <div class="botoes">
+                <button class="theme-toggle" id="theme-toggle">
+                    <i class="fas fa-moon"></i>
+                </button>
+                <button class="menu-btn">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobile-menu">
+        <button class="close-btn">
+            <i class="fas fa-times"></i>
+        </button>
+        <ul>
+            <li><a href="#home" class="mobile-link">Home</a></li>
+            <li><a href="#about" class="mobile-link">Sobre</a></li>
+            <li><a href="#experience" class="mobile-link">Experiência</a></li>
+            <li><a href="#projects" class="mobile-link">Projetos</a></li>
+            <li><a href="#skills" class="mobile-link">Tecnologias</a></li>
+            <li><a href="#contact" class="mobile-link">Contato</a></li>
+        </ul>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="container hero-content">
+            <h1 class="hero-title">Olá, sou <span class="nome">Matheus Maestri</span></h1>
+            <p class="hero-subtitle">Desenvolvedor de Software Front-End <br>com experiência em sistemas WEB e portifólios empresariais.</p>
+            <div class="hero-cta">
+                <a href="#" class="btn" id="download-cv">
+                    <i class="fas fa-download"></i> Baixar CV
+                </a>
+            </div>
+        </div>
+        <a href="#about" class="scroll-indicator">
+            <i class="fas fa-chevron-down"></i>
+        </a>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+        <div class="container">
+            <h2 class="section-title fade-in">Sobre Mim</h2>
+            <div class="about-content">
+                <div class="about-image fade-in">
+                    <img src="fotoMatheusM.jpeg" alt="Matheus Maestri">
+                </div>
+                <div class="about-text fade-in">
+                    <p>Desenvolvedor com mais de 4 anos de experiência em TI, especializado em desenvolvimento frontend com <strong>Angular</strong>. Já trabalhei com <strong>React</strong> anteriormente e tenho domínio de <strong>HTML</strong>, <strong>CSS</strong>, <strong>JavaScript</strong> e <strong>Bootstrap</strong> para construção de interfaces modernas e responsivas.</p>
+
+                    <p>Também possuo experiência no backend com <strong>ASP.NET</strong>, criação de <strong>APIs REST</strong> e integração com bancos de dados <strong>SQL Server</strong>, além de suporte técnico e análise de sistemas.</p>
+                    <div class="skills-list">
+                        <span class="skill-tag learning"><i class="fab fa-angular"></i> Angular</span>
+                        <span class="skill-tag learning"><i class="fab fa-react"></i> React</span>
+                        <span class="skill-tag"><i class="fab fa-js"></i> JavaScript</span>
+                        <span class="skill-tag"><i class="fab fa-html5"></i> HTML</span>
+                        <span class="skill-tag"><i class="fab fa-css3-alt"></i> CSS</span>
+                        <span class="skill-tag"><i class="fas fa-code"></i> .NET</span>
+                        <span class="skill-tag"><i class="fas fa-server"></i> APIs REST</span>
+                        <span class="skill-tag"><i class="fas fa-database"></i> SQL</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="section">
+        <div class="container">
+            <h2 class="section-title fade-in">Experiências Profissionais</h2>
+            <div class="timeline">
+                <div class="timeline-item fade-in">
+                    <div class="timeline-content">
+                        <div class="timeline-date">2024 - Atual</div>
+                        <h3 class="timeline-title">Matriz Sistemas</h3>
+                        <p>Analista controle de qualidade e Desenvolvedor WEB (Angular 18+)</p>
+                        <ul class="timeline-list">
+                            <li>Desenvolvimento Sistemas WEB</li>
+                            <li>Testes de Softwares</li>
+                            <li>Correção de bugs</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="timeline-item fade-in">
+                    <div class="timeline-content">
+                        <div class="timeline-date">2023 - 2024</div>
+                        <h3 class="timeline-title">Desenvolvedor Técnico</h3>
+                        <p>Suporte técnico em TI e Desenvolvedor WEB (React)</p>
+                        <ul class="timeline-list">
+                            <li>Instalação e manutenção de infraestrutura</li>
+                            <li>Suporte técnico para usuários</li>
+                            <li>Desenvolvimento e manutenção de sites com React</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="timeline-item fade-in">
+                    <div class="timeline-content">
+                        <div class="timeline-date">2021 - Atual</div>
+                        <h3 class="timeline-title">Desenvolvedor WEB Autônomo</h3>
+                        <p>Presto serviços autônomos de desenvolvimento de sites e sistemas para empresas e pessoas particulares</p>
+                        <ul class="timeline-list">
+                            <li>E-commerce</li>
+                            <li>Desenvolvimento e manutenção de sites, Angular e React</li>
+                            <li>Projetos com WordPress</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section">
+        <div class="container">
+            <h2 class="section-title fade-in">Projetos</h2>
+            <div class="projects-grid">
+                <!-- Project 1 -->
+                <div class="project-card fade-in">
+                    <div class="project-image">
+                        <i class="fas fa-file-code"></i>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Sistema de Documentação de Versões</h3>
+                        <p class="project-description">
+                            Sistema para controle e documentação de versões de software, 
+                            permitindo rastreamento de alterações e novos recursos.
+                        </p>
+                        <div class="project-tech">
+                            <span>Angular</span>
+                            <span>API's</span>
+                            <span>HTML/CSS/JS</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/Matheus-Maestri" target="_blank">
+                                <i class="fab fa-github"></i> GitHub
+                            </a>
+                            <!-- <a href="#" target="_blank">
+                                <i class="fas fa-external-link-alt"></i> Demo
+                            </a> -->
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 2 -->
+                <div class="project-card fade-in">
+                    <div class="project-image">
+                        <i class="fas fa-id-card"></i>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Desenvolvimento de sites empresariais</h3>
+                        <p class="project-description">
+                            Realizo projetos para empresas, de forma autonoma, construindo sites profissionais e comerciais.
+                        </p>
+                        <div class="project-tech">
+                            <span>React</span>
+                            <span>WordPress</span>
+                            <span>Bootstrap</span>
+                            <span>HTML</span>
+                            <span>CSS</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/Matheus-Maestri" target="_blank">
+                                <i class="fab fa-github"></i> GitHub
+                            </a>
+                            <!-- <a href="#" target="_blank">
+                                <i class="fas fa-external-link-alt"></i> Demo
+                            </a> -->
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 3 -->
+                <div class="project-card fade-in">
+                    <div class="project-image">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Aplicativo para Serviços Autônomos</h3>
+                        <p class="project-description">
+                            Estou desenvolvendo um aplicativo que conecta prestadores de serviços autônomos a pessoas que precisam desses serviços. O objetivo é facilitar a contratação de profissionais e oferecer mais visibilidade para quem trabalha por conta própria.
+                        </p>
+                        <div class="project-tech">
+                            <span>.NET Core</span>
+                            <span>MySQL</span>
+                            <span>React Native</span>
+                            <span>API's</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/Matheus-Maestri" target="_blank">
+                                <i class="fab fa-github"></i> GitHub
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section">
+        <div class="container">
+            <h2 class="section-title fade-in">Tecnologias</h2>
+            <div class="skills-container fade-in">
+
+                <!-- Frontend Skills -->
+                <div class="skills-category">
+                    <h3><i class="fas fa-laptop-code"></i> Frontend</h3>
+                    <div class="skills-grid">
+                        <div class="skill-box">
+                            <i class="fab fa-html5"></i>
+                            <div class="skill-info">
+                                <div class="skill-name">HTML</div>
+                                <div class="skill-level">
+                                    <div class="skill-progress" style="width: 90%;"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill-box">
+                            <i class="fab fa-css3-alt"></i>
+                            <div class="skill-info">
+                                <div class="skill-name">CSS</div>
+                                <div class="skill-level">
+                                    <div class="skill-progress" style="width: 85%;"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill-box">
+                            <i class="fab fa-js"></i>
+                            <div class="skill-info">
+                                <div class="skill-name">JavaScript</div>
+                                <div class="skill-level">
+                                    <div class="skill-progress" style="width: 75%;"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill-box">
+                            <i class="fab fa-angular"></i>
+                            <div class="skill-info">
+                                <div class="skill-name">Angular</div>
+                                <div class="skill-level">
+                                    <div class="skill-progress" style="width: 70%;"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill-box">
+                            <i class="fab fa-react"></i>
+                            <div class="skill-info">
+                                <div class="skill-name">React</div>
+                                <div class="skill-level">
+                                    <div class="skill-progress" style="width: 55%;"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Backend Skills -->
+                <div class="skills-category">
+                    <h3><i class="fas fa-server"></i> Backend</h3>
+                    <div class="skills-grid">
+                        <div class="skill-box">
+                            <i class="fab fa-microsoft"></i>
+                            <div class="skill-info">
+                                <div class="skill-name">C#</div>
+                                <div class="skill-level">
+                                    <div class="skill-progress" style="width: 60%;"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill-box">
+                            <i class="fas fa-code"></i>
+                            <div class="skill-info">
+                                <div class="skill-name">ASP.NET Core</div>
+                                <div class="skill-level">
+                                    <div class="skill-progress" style="width: 45%;"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill-box">
+                            <i class="fas fa-database"></i>
+                            <div class="skill-info">
+                                <div class="skill-name">SQL Server</div>
+                                <div class="skill-level">
+                                    <div class="skill-progress" style="width: 45%;"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Other Skills -->
+                <div class="skills-category">
+                    <h3><i class="fas fa-tools"></i> Outros</h3>
+                    <div class="skills-grid">
+                        <div class="skill-box">
+                            <i class="fab fa-git-alt"></i>
+                            <div class="skill-info">
+                                <div class="skill-name">Git</div>
+                                <div class="skill-level">
+                                    <div class="skill-progress" style="width: 70%;"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill-box">
+                            <i class="fab fa-bootstrap"></i>
+                            <div class="skill-info">
+                                <div class="skill-name">Bootstrap</div>
+                                <div class="skill-level">
+                                    <div class="skill-progress" style="width: 80%;"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill-box">
+                            <i class="fab fa-css3"></i>
+                            <div class="skill-info">
+                                <div class="skill-name">Tailwind</div>
+                                <div class="skill-level">
+                                    <div class="skill-progress" style="width: 60%;"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill-box">
+                            <i class="fas fa-exchange-alt"></i>
+                            <div class="skill-info">
+                                <div class="skill-name">Postman</div>
+                                <div class="skill-level">
+                                    <div class="skill-progress" style="width: 75%;"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section contact-section">
+        <div class="container">
+            <h2 class="section-title fade-in">Contato</h2>
+            <div class="contact-container">
+                <div class="contact-info fade-in">
+                    <p>Estou disponível para novos projetos e oportunidades. Entre em contato comigo para conversarmos!</p>
+                    <ul class="contact-links">
+                        <li>
+                            <i class="fab fa-linkedin-in"></i>
+                            <a href="https://www.linkedin.com/in/matheus-maestri-da-silva/" target="_blank">linkedin/matheus-maestri-da-silva/</a>
+                        </li>
+                        <li>
+                            <i class="fab fa-github"></i>
+                            <a href="https://github.com/MatheusMaestri" target="_blank">github.com/MatheusMaestri</a>
+                        </li>
+                        <li>
+                            <i class="fas fa-envelope"></i>
+                            <a href="mailto:matheusmaestri28@gmail.com">matheusmaestri28@gmail.com</a>
+                        </li>
+                        <li>
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Colatina - ES, Brasil</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="contact-form fade-in">
+                    <form id="contact-form">
+                        <div class="form-group">
+                            <label for="name" class="form-label">Nome</label>
+                            <input type="text" id="name" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email" class="form-label">E-mail</label>
+                            <input type="email" id="email" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message" class="form-label">Mensagem</label>
+                            <textarea id="message" placeholder="Escreva sua mensagem, número de telefone, etc." class="form-control" required></textarea>
+                        </div>
+                        <button type="submit" class="btn">
+                            <i class="fas fa-paper-plane"></i> Enviar Mensagem
+                        </button>
+                    </form>
+                </div>
+                <div id="successNotification" class="notification">
+                    <div class="notification-header">
+                        <div class="notification-title">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#4CAF50" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                                <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                            </svg>
+                            Mensagem Enviada
+                        </div>
+                        <button class="notification-close" onclick="closeNotification()">&times;</button>
+                    </div>
+                    <div class="notification-content">
+                        <p>Sua mensagem foi enviada com sucesso! Entraremos em contato em breve.</p>
+                    </div>
+                    <div class="notification-details">
+                        <p><strong>Nome:</strong> <span id="notificationName"></span></p>
+                        <p><strong>Email:</strong> <span id="notificationEmail"></span></p>
+                        <p><strong>Mensagem:</strong> <span id="notificationMessage"></span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-content">
+            <div class="footer-logo">
+                <span class="logo-bracket">&lt;</span>MM<span class="logo-bracket">/&gt;</span>
+            </div>
+            <div class="footer-links">
+                <a href="#home">Home</a>
+                <a href="#about">Sobre</a>
+                <a href="#experience">Experiência</a>
+                <a href="#projects">Projetos</a>
+                <a href="#contact">Contato</a>
+            </div>
+            <div class="social-links">
+                <a href="https://github.com/Matheus-Maestri" target="_blank">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="https://linkedin.com" target="_blank">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+                <a href="mailto:matheusmaestri28@gmail.com">
+                    <i class="fas fa-envelope"></i>
+                </a>
+            </div>
+            <p>&copy; 2025 Matheus Maestri. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- Botão para voltar ao topo -->
+    <div class="back-to-top" id="back-to-top">
+        <i class="fas fa-arrow-up"></i>
+    </div>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
